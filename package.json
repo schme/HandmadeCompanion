@@ -1,0 +1,23 @@
+{
+  "name": "handmade-companion",
+  "version": "0.0.0",
+  "title": "Handmade Companion",
+  "description": "Companion Site for Handmade Hero educational content",
+  "author": "Jace Bennett",
+  "license": "CC0",
+  "homepage": "http://handmade-companion.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HandmadeHeroes/HandmadeCompanion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HandmadeHeroes/HandmadeCompanion/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "docpad": "~6.69.1"
+  }
+}
