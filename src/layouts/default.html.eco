@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title><%= @document.title %> | Handmade Companion</title>
+    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").add(["/vendor/normalize.css", "/styles/style.css"]).toHTML() %>
+    <script src="/vendor/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/" class="site-title">Handmade Companion</a>
+            <%= @document.title %>
+        </h1>
+    </header>
+    <%- @content %>
+    <%- @getBlock("scripts").toHTML() %>
+</body>
+</html>

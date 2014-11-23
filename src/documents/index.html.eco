@@ -1,0 +1,26 @@
+---
+title: "Welcome"
+layout: "default"
+isPage: true
+---
+
+<article>
+    <p>Welcome to Handmade Companion! This site attempts to catalog and index Casey Muratori's excellent series of instructional 
+    videos documenting the making of the game <a href="http://handmadehero.org">Handmade Hero</a>.</p>
+
+    <h3>Chapter 0: Intro to C</h3>
+    <ul>
+    <% query = fullPath: $like: 'intro-to-c' %>
+    <% for page in @getFiles(query).toJSON(): %>
+      <li><a href="<%= page.url %>"><%= page.title %></a></li>
+    <% end %>
+    </ul>
+
+    <h3>Chapter 1: Windows Platform Layer</h3>
+    <ul>
+    <% query = fullPath: $like: 'win32-platform' %>
+    <% for page in @getFiles(query).toJSON(): %>
+      <li><a href="<%= page.url %>"><%= page.title %></a></li>
+    <% end %>
+    </ul>
+</article>

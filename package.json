@@ -13,11 +13,19 @@
   "bugs": {
     "url": "https://github.com/HandmadeHeroes/HandmadeCompanion/issues"
   },
+  "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-only": "docpad-server",
+    "start": "docpad run"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "docpad": "~6.69.1"
-  }
+  "dependencies": {
+    "docpad": "~6.69.1",
+    "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-livereload": "~2.6.0",
+    "docpad-plugin-marked": "~2.2.1",
+    "docpad-plugin-stylus": "~2.8.0",
+    "docpad-plugin-coffeescript": "~2.4.0"
+  },
+  "devDependencies": {}
 }

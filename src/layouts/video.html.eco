@@ -1,0 +1,31 @@
+---
+layout: "default"
+---
+
+<div id="player-wrapper">
+    <nav>
+        <ul name="markers">
+        <% for time, label of @document.markers: %>
+            <li>
+                <a href="#" class="marker-time" data-human-timecode="<%= time %>">
+                    <%= label %> (<%= time %>)
+                </a>
+            </li>
+        <% end %>
+        </ul>
+    </nav>
+    <div id="player"></div>
+</div>
+
+<article>
+    <%- @content %>
+</article>
+
+
+<script src="/scripts/video.js"></script>
+<script>
+function onYouTubeIframeAPIReady() {
+    createPlayer('player', 1280, 750, '<%= @document.videoId %>');
+}
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
