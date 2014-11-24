@@ -25,7 +25,8 @@
     "docpad-plugin-livereload": "~2.6.0",
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-stylus": "~2.8.0",
-    "docpad-plugin-coffeescript": "~2.4.0"
+    "docpad-plugin-coffeescript": "~2.4.0",
+    "docpad-plugin-ghpages": "~2.4.3"
   },
   "devDependencies": {}
 }

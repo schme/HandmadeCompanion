@@ -12,7 +12,7 @@ isPage: true
     <ul>
     <% query = fullPath: $like: 'intro-to-c' %>
     <% for page in @getFiles(query).toJSON(): %>
-      <li><a href="<%= page.url %>"><%= page.title %></a></li>
+      <li><a href="<%= @site.url %><%= page.url %>"><%= page.title %></a></li>
     <% end %>
     </ul>
 
@@ -20,7 +20,7 @@ isPage: true
     <ul>
     <% query = fullPath: $like: 'win32-platform' %>
     <% for page in @getFiles(query).toJSON(): %>
-      <li><a href="<%= page.url %>"><%= page.title %></a></li>
+      <li><a href="<%= @site.url %><%= page.url %>"><%= page.title %></a></li>
     <% end %>
     </ul>
 </article>

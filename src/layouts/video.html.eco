@@ -22,7 +22,7 @@ layout: "default"
 </article>
 
 
-<script src="/scripts/video.js"></script>
+<script src="<%= @site.url %>/scripts/video.js"></script>
 <script>
 function onYouTubeIframeAPIReady() {
     createPlayer('player', 1280, 750, '<%= @document.videoId %>');
