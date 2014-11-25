@@ -17,8 +17,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server-only": "docpad-server",
-    "forumbuild": "HOSTROOT=jace docpad generate --env static",
-    "ghdeploy": "docpad deploy-ghpages --env static",
     "start": "docpad run"
   },
   "dependencies": {

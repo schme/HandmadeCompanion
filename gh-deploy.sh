@@ -1,0 +1,1 @@
+$(npm bin)/docpad deploy-ghpages --env static
