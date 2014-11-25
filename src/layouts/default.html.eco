@@ -2,13 +2,13 @@
 <head>
     <title><%= @document.title %> | Handmade Companion</title>
     <%- @getBlock("meta").toHTML() %>
-    <%- @getBlock("styles").add([ @site.url + "/vendor/normalize.css", @site.url + "/styles/style.css"]).toHTML() %>
-    <script src="<%= @site.url %>/vendor/jquery-2.1.1.min.js"></script>
+    <%- @getBlock("styles").add([ @rootPath() + "/vendor/normalize.css", @rootPath() + "/styles/style.css"]).toHTML() %>
+    <script src="<%= @rootPath() %>/vendor/jquery-2.1.1.min.js"></script>
 </head>
 <body>
     <header>
         <h1>
-            <a href="<%= @site.url %>/" class="site-title">Handmade Companion</a>
+            <a href="<%= @rootPath() %>/" class="site-title">Handmade Companion</a>
             <%= @document.title %>
         </h1>
     </header>

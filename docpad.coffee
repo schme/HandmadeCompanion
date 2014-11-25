@@ -1,6 +1,8 @@
 # DocPad Configuration File
 # http://docpad.org/docs/config
 
+pathChecked = false
+
 # Define the DocPad Configuration
 docpadConfig = {
 	plugins:
@@ -26,6 +28,12 @@ docpadConfig = {
             keywords: """
                 place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
                 """
+
+        rootPath: ->
+            if process.env["HOSTROOT"]?
+                "/#{process.env["HOSTROOT"]}"
+            else
+                ""
 }
 
 # Export the DocPad Configuration
