@@ -1,13 +1,10 @@
+autostart = false
 player = null
+$player = null
+ytDeferred = $.Deferred()
 
-@createPlayer = (elementId, width, height, videoId, autostart) ->
-    player = new YT.Player elementId, 
-        width: width
-        height: height
-        videoId: videoId
-        events:
-            'onReady': (event) ->
-                event.target.playVideo() if autostart
+@onYouTubeIframeAPIReady = ->
+    ytDeferred.resolve()
 
 jumpToTime = (humanTime) ->
     numSeconds = humanTimeToSeconds humanTime
@@ -20,6 +17,25 @@ humanTimeToSeconds = (humanTime) ->
     result
 
 $ ->
+    $player = $('#player')
+
+    ytDeferred.then ->
+        player = new YT.Player 'player',
+            videoId: $player.data().videoId
+            events:
+                'onReady': (event) ->
+                    $player = $('#player')
+                    event.target.playVideo() if autostart
+    
     $("a.marker-time").on 'click', (event)->
         event.preventDefault()
         jumpToTime $(event.target).data().humanTimecode
+
+    setSize = (size) ->
+        (event)->
+            event.preventDefault()
+            $player.attr('class', size)
+
+    $("a[name=player-small]").on 'click', setSize("small")
+    $("a[name=player-medium]").on 'click', setSize("medium")
+    $("a[name=player-large]").on 'click', setSize("large")

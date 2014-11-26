@@ -1,31 +1,42 @@
----
-layout: "default"
----
+<html>
+<head>
+    <title><%= @document.title %> | Handmade Companion</title>
+    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").add([ @rootPath() + "/vendor/normalize.css", @rootPath() + "/styles/style.css"]).toHTML() %>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="<%= @rootPath() %>/" class="site-title">Handmade Companion</a>
+            <%= @document.title %>
+            
+            (
+                <a name="player-small" href="#">Small</a> |
+                <a name="player-medium" href="#">Medium</a> |
+                <a name="player-large" href="#">Large</a>
+            )
+        </h1>
+    </header>
 
-<div id="player-wrapper">
-    <nav>
-        <ul name="markers">
-        <% for time, label of @document.markers: %>
-            <li>
-                <a href="#" class="marker-time" data-human-timecode="<%= time %>">
-                    <%= label %> (<%= time %>)
-                </a>
-            </li>
-        <% end %>
-        </ul>
-    </nav>
-    <div id="player"></div>
-</div>
+    <div id="player-wrapper">
+        <nav>
+            <ul name="markers">
+            <% for time, label of @document.markers: %>
+                <li>
+                    <a href="#" class="marker-time" data-human-timecode="<%= time %>">
+                        <%= label %> (<%= time %>)
+                    </a>
+                </li>
+            <% end %>
+            </ul>
+        </nav>
+        <div id="player" class="medium" data-video-id="<%= @document.videoId %>"></div>
+    </div>
 
-<article>
-    <%- @content %>
-</article>
+    <article>
+        <%- @content %>
+    </article>
 
-
-<script src="<%= @rootPath() %>/scripts/video.js"></script>
-<script>
-function onYouTubeIframeAPIReady() {
-    createPlayer('player', 1280, 750, '<%= @document.videoId %>');
-}
-</script>
-<script src="https://www.youtube.com/iframe_api"></script>
+    <%- @getBlock("scripts").add([@rootPath() + "/vendor/jquery-2.1.1.min.js",  @rootPath() + "/scripts/video.js", "https://www.youtube.com/iframe_api" ]).toHTML() %>
+</body>
+</html>
