@@ -1,3 +1,26 @@
+flexbox()
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+flex()
+  -webkit-box-flex: arguments
+  -moz-box-flex: arguments
+  -webkit-flex: arguments
+  -ms-flex: arguments
+  flex: arguments
+  
+flex-wrap()
+  -webkit-flex-wrap: wrap
+  flex-wrap: wrap
+  
+flex-justify()
+  -webkit-justify-content: arguments
+  justify-content: arguments
+  
+
 body
   margin: 0px
   padding: 0px
@@ -21,15 +44,16 @@ body
       nav
 
         ul
+          flexbox()
+          flex-wrap()
+          flex-justify: space-around
           list-style-type: none
-          display: flex
-          justify-content: space-around
           margin: 0
           padding: 0
 
           li
             display: inline-block
-            flex-grow: 1
+            flex: 1 1 auto
             margin-left: 3.5px
             margin-right: 3.5px
 
@@ -46,29 +70,28 @@ body
       box-shadow: 0px 0px 128px 20px rgb(0, 0, 0)
       
       .outer
+        flexbox()
+        flex-wrap()
+        flex-justify: center
         padding: 5px
-        display: flex
-        justify-content: center
-        flex-wrap: wrap
         background-color: #888
         
         article
-          min-width: 300px
-          max-width: 672px
+          flex: 1 1 50%
           margin: 5.5px
           padding: 30px
           background-color: #ddd
           box-shadow: 0px 0px 4px rgb(0, 0, 0)
           
         &>.sidebar
-          flex-shrink: 0
+          flex: 1 1 200px
           
           article
             min-width: 200px
 
 #player-wrapper
   display: inline-block
-  flex-shrink: 0
+  flex: 0 0 auto
   box-shadow: 0px 0px 4px rgb(0, 0, 0)
     
   #player
@@ -87,8 +110,7 @@ body
 
 nav.timecodes
   margin: 5.5px
-  flex-shrink: 0
-  width: 200px
+  flex: 0 0 200px
   box-shadow: 0px 0px 4px rgb(0, 0, 0)
   
   a
@@ -115,12 +137,13 @@ nav.timecodes
         text-decoration: none
         
 #video-notes
-  width: 690px
+  min-width: 300px
+  max-width: 600px
 
 #game_icon 
   background-position: 0px 0px
   background-repeat: no-repeat
-  background-image:url(https://forums.handmadehero.org/images/hero_home_200x114.png)
+  background-image:url(/images/hero_home_200x114.png)
   background-size:cover
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.7)
   height: 113px
