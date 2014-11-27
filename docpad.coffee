@@ -10,6 +10,12 @@ docpadConfig = {
             deployRemote: 'target'
             deployBranch: 'master'
 
+
+    collections:
+        videoPages: ->
+            @getCollection('html').findAllLive({relativeOutDirPath: {$beginsWith: 'videos'}}).on "add", (model) ->
+                model.setMetaDefaults({layout:"video"})
+
     templateData:
         # Specify some site properties
         site:

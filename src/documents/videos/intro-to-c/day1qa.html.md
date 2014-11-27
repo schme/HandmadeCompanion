@@ -1,6 +1,5 @@
 ---
 title: "Intro to C on Windows - Day 1 Q&A"
-layout: "video"
 videoId: "I5fNrmQYeuI"
 markers:
     "0:27": How many videos do you think you'll do before you actually start coding the game?

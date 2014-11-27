@@ -1,6 +1,5 @@
 ---
 title: "Intro to C on Windows - Day 3 Q&A"
-layout: "video"
 videoId: "20LmZk1hakA"
 markers:
     "0:20": They teach nothing of this in many colleges. How do you feel about the new programming workforce?
