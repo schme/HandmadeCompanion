@@ -1,6 +1,5 @@
 ---
 title: "Intro to C on Windows - Day 1"
-layout: "video"
 videoId: "F3ntGDm6hOs"
 markers:
     "0:00": "Introduction"

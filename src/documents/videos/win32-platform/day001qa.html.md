@@ -1,6 +1,5 @@
 ---
 title: "Setting Up the Windows Build - Q&A"
-layout: "video"
 videoId: "uxbJo5DDpWY"
 markers:
     "0:35": "Could you show how you added the Handmade Hero directory to the path?"
