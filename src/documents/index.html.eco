@@ -5,6 +5,10 @@ isPage: true
 ---
 
 <article>
+    <header>
+        <h1>Episode Guide</h1>
+    </header>
+
     <p>Welcome to Handmade Companion! This site attempts to catalog and index Casey Muratori's excellent series of instructional 
     videos documenting the making of the game <a href="http://handmadehero.org">Handmade Hero</a>.</p>
 
@@ -24,3 +28,22 @@ isPage: true
     <% end %>
     </ul>
 </article>
+
+<div class="sidebar">
+    <article id="game_ad">
+        <div id="game_icon"></div>
+        <div id="game_title">Handmade Hero</div>
+        <div id="game_description">
+            Instant source code access<br>
+            Full access to nightly updates<br>
+            DRM-free copy of final game
+        </div>
+        <div id="purchase_buy">
+            <a id="buy_now" href="https://transactions.sendowl.com/packages/6671/8CB9DE0F/purchase" rel="nofollow">
+                PREORDER $15
+                <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
+            </a>
+        </div>
+
+    </article>
+</div>

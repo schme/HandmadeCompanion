@@ -1,77 +1,75 @@
 body
-  font-family: Liberation, Helvetica, Arial, sans-serif
-  font-size: 14px
-
-article
-  width: 854px
-  margin-left: 320px
-  
-  p
-    padding-left: 5px
-
-body>header
   margin: 0px
   padding: 0px
-  background-color: #666
-  height: 24px
-  line-height: 24px
-  
-  a
-    color: #ccc
+  background-color: #000
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-size: 14px
+  line-height: 18px
 
-  h1
-    margin: 0px
-    font-weight: normal
-    font-size: 14px
-    color: #ccc
-    
-    a.site-title
-      display: inline-block
-      padding-left: 28px
-      width: 292px
-      margin-right: 5px
-      background-color: #444
-      background-image: url("../images/handmade-icon.png")
-      background-repeat: no-repeat
-      text-decoration: none
-      font-weight: bold
-      
-#player-wrapper
-  display: flex
-  //justify-content: center
-  background-color: #333
-  color: #ccc
-  
-  a
-    color: #ccc
+  #outer_holder
+    margin: 0 auto
+    margin-top: 128px
+    max-width: 1024px
 
-  &>nav
-    flex-shrink: 0
-    width: 320px
-    overflow-y: auto
-    
-    ul[name=markers]
+    &>header
       margin: 0px
+      margin-bottom: 9px
       padding: 0px
-      list-style-type: none
-      font-size: 11px
+      height: 24px
+      line-height: 24px
       
-      &>li
+      nav
+
+        ul
+          list-style-type: none
+          display: flex
+          justify-content: space-around
+          margin: 0
+          padding: 0
+
+          li
+            flex-grow: 1
+            margin-left: 3.5px
+            margin-right: 3.5px
+
+            a
+              display: block
+              padding: 4px
+              background-color: rgb(56, 102, 124)
+              color: #ccc
+              text-align: center
+              text-decoration: none
+    
+    .back
+      margin: 0px auto 20px auto
+      box-shadow: 0px 0px 128px 20px rgb(0, 0, 0)
+      
+      .outer
         padding: 5px
-        display: block
-        border-bottom: 1px solid #333
-        background-color: #666
-        color: #ddd
-          
-        &:hover
-          background-color: #555
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        background-color: #888
         
-        a
-          display: block
-          text-decoration: none
+        article
+          min-width: 300px
+          max-width: 672px
+          margin: 5.5px
+          padding: 30px
+          background-color: #ddd
+          box-shadow: 0px 0px 4px rgb(0, 0, 0)
+          
+        &>.sidebar
+          flex-shrink: 0
+          
+          article
+            min-width: 200px
+
+#player-wrapper
+  flex-shrink: 0
+  box-shadow: 0px 0px 4px rgb(0, 0, 0)
     
   #player
-    flex-shrink: 0
     
     &.small
       width: 640px
@@ -84,3 +82,82 @@ body>header
     &.large
       width: 1280px
       height: 750px
+
+nav.timecodes
+  margin: 5.5px
+  flex-shrink: 0
+  width: 200px
+  box-shadow: 0px 0px 4px rgb(0, 0, 0)
+  
+  a
+    color: #ccc
+  
+  ul[name=markers]
+    margin: 0px
+    padding: 0px
+    list-style-type: none
+    font-size: 11px
+    
+    &>li
+      padding: 5px
+      display: block
+      border-bottom: 1px solid #333
+      background-color: #666
+      color: #ddd
+        
+      &:hover
+        background-color: #555
+      
+      a
+        display: block
+        text-decoration: none
+        
+#video-notes
+  width: 700px
+
+#game_icon 
+  background-position: 0px 0px
+  background-repeat: no-repeat
+  background-image:url(https://forums.handmadehero.org/images/hero_home_200x114.png)
+  background-size:cover
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.7)
+  height: 113px
+  margin: 0px 0px 6px 0px
+
+#game_title
+  margin: 16px 0px 0px 0px
+  padding: 0
+  font-size:18px
+  line-height:24px
+  font-weight:bold
+  color:#00547C
+  white-space: nowrap
+  text-shadow:1px 1px 2px rgba(0,0,0,0.25)
+  top: -4px
+
+#game_description 
+  font-size: 13px
+  text-align: left
+  line-height: 21px
+  color:#666
+  top: -2px
+
+#purchase_buy 
+  margin: 4px 0px 0px 0px
+  padding: 12px 0px 0px 0px
+  text-align: center
+
+#buy_now
+  color: #C9D7DE
+  background-color: #38667C
+  padding: 6px 16px 10px 16px
+  text-align: center
+  font-size: 13px
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5), inset 0px -10px 4px -8px rgba(0, 0, 0, 1.0)
+  font-weight: bold
+  text-decoration: none
+  
+#buy_now:hover
+  background-color: #6B93A7
+  color: #fff
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 1.0), inset 0px -10px 4px -8px rgba(0, 0, 0, 1.0)

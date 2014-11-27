@@ -5,37 +5,52 @@
     <%- @getBlock("styles").add([ @rootPath() + "/vendor/normalize.css", @rootPath() + "/styles/style.css"]).toHTML() %>
 </head>
 <body>
+    <div id="outer_holder">
     <header>
-        <h1>
-            <a href="<%= @rootPath() %>/" class="site-title">Handmade Companion</a>
-            <%= @document.title %>
-            
-            (
-                <a name="player-small" href="#">Small</a> |
-                <a name="player-medium" href="#">Medium</a> |
-                <a name="player-large" href="#">Large</a>
-            )
-        </h1>
-    </header>
-
-    <div id="player-wrapper">
         <nav>
-            <ul name="markers">
-            <% for time, label of @document.markers: %>
-                <li>
-                    <a href="#" class="marker-time" data-human-timecode="<%= time %>">
-                        <%= label %> (<%= time %>)
-                    </a>
-                </li>
-            <% end %>
+            <ul>
+                <li><a href="/">News</a></li>
+                <li><a href="/index.php/episode-guide">Episode Guide</a></li>
+                <li><a href="/index.php/platforms-and-tools">Platforms and Tools</a></li>
+                <li><a href="/index.php/component/kunena/handmade-hero-coding-discussion">Code Discussion</a></li>
+                <li><a href="/index.php/game-discussion">Game Discussion</a></li>
+                <li><a href="/index.php/search">Search</a></li>
+                <li><a href="/index.php/my-profile">My Profile</a></li>
             </ul>
         </nav>
-        <div id="player" class="medium" data-video-id="<%= @document.videoId %>"></div>
-    </div>
+    </header>
 
-    <article>
-        <%- @content %>
-    </article>
+    <div class="back">
+        <div class="outer">
+            <div id="player-wrapper">
+                <div id="player" class="medium" data-video-id="<%= @document.videoId %>"></div>
+            </div>
+
+            <% if @document.markers?: %>
+            <div>
+            <nav class="timecodes">
+                <ul name="markers">
+                <% for time, label of @document.markers: %>
+                    <li>
+                        <a href="#" class="marker-time" data-human-timecode="<%= time %>">
+                            <%= label %> (<%= time %>)
+                        </a>
+                    </li>
+                <% end %>
+                </ul>
+            </nav>
+            </div>
+            <% end %>
+
+            <div>
+                <article id="video-notes">
+                    <h1><%= @document.title %></h1>
+                    <%- @content %>
+                </article>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <%- @getBlock("scripts").add([@rootPath() + "/vendor/jquery-2.1.1.min.js",  @rootPath() + "/scripts/video.js", "https://www.youtube.com/iframe_api" ]).toHTML() %>
 </body>

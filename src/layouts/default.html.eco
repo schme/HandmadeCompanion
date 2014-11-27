@@ -6,13 +6,26 @@
     <script src="<%= @rootPath() %>/vendor/jquery-2.1.1.min.js"></script>
 </head>
 <body>
+    <div id="outer_holder">
     <header>
-        <h1>
-            <a href="<%= @rootPath() %>/" class="site-title">Handmade Companion</a>
-            <%= @document.title %>
-        </h1>
+        <nav>
+            <ul>
+                <li><a href="/">News</a></li>
+                <li><a href="/index.php/episode-guide">Episode Guide</a></li>
+                <li><a href="/index.php/platforms-and-tools">Platforms and Tools</a></li>
+                <li><a href="/index.php/component/kunena/handmade-hero-coding-discussion">Code Discussion</a></li>
+                <li><a href="/index.php/game-discussion">Game Discussion</a></li>
+                <li><a href="/index.php/search">Search</a></li>
+                <li><a href="/index.php/my-profile">My Profile</a></li>
+            </ul>
+        </nav>
     </header>
-    <%- @content %>
+    <div class="back">
+        <div class="outer">
+            <%- @content %>
+        </div>
+    </div>
+    </div>
     <%- @getBlock("scripts").toHTML() %>
 </body>
 </html>
