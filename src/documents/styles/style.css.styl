@@ -25,6 +25,9 @@ body
   margin: 0px
   padding: 0px
   background-color: #000
+  background-repeat: no-repeat
+  background-position: center top
+  background-image: url(https://forums.handmadehero.org/images/home_1920x1080.jpg)
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   font-size: 14px
   line-height: 18px
@@ -33,12 +36,14 @@ body
     margin: 0 auto
     margin-top: 128px
     max-width: 1024px
+    
+    @media screen and (min-width: 1320px)
+      max-width: 1300px
 
     &>header
       margin: 0px
-      margin-bottom: 9px
       padding: 0px
-      height: 24px
+      min-height: 24px
       line-height: 24px
       
       nav
@@ -56,6 +61,7 @@ body
             flex: 1 1 auto
             margin-left: 3.5px
             margin-right: 3.5px
+            margin-bottom: 1px
 
             a
               display: block
@@ -72,46 +78,59 @@ body
       .outer
         flexbox()
         flex-wrap()
+        align-items: flex-start
         flex-justify: center
         padding: 5px
         background-color: #888
-        
-        article
+                  
+        &>article
           flex: 1 1 50%
+
+        article
           margin: 5.5px
+          box-shadow: 0px 0px 4px rgb(0, 0, 0)
           padding: 30px
           background-color: #ddd
-          box-shadow: 0px 0px 4px rgb(0, 0, 0)
           
         &>.sidebar
-          flex: 1 1 200px
+          flex: 0 0 271px
           
           article
-            min-width: 200px
+            width: 200px
+            width: 200px
 
 #player-wrapper
   display: inline-block
-  flex: 0 0 auto
+  flex: 0 1 auto
+  margin: 5.5px
   box-shadow: 0px 0px 4px rgb(0, 0, 0)
     
   #player
-    
-    &.small
+    @media screen
+      width: 320px
+      height: 210px
+      
+    @media screen and (min-width: 500px)
+      width: 480px
+      height: 300px
+
+    @media screen and (min-width: 670px)
       width: 640px
       height: 390px
       
-    &.medium
+    @media screen and (min-width: 890px)
       width: 854px
       height: 510px
     
-    &.large
+    @media screen and (min-width: 1320px)
       width: 1280px
       height: 750px
 
 nav.timecodes
   margin: 5.5px
-  flex: 0 0 200px
-  box-shadow: 0px 0px 4px rgb(0, 0, 0)
+  margin-right: 7.5px
+  width: 200px
+  flex: 0 0 auto
   
   a
     color: #ccc
@@ -121,6 +140,7 @@ nav.timecodes
     padding: 0px
     list-style-type: none
     font-size: 11px
+    box-shadow: 0px 0px 4px rgb(0, 0, 0)
     
     &>li
       padding: 5px
@@ -135,10 +155,7 @@ nav.timecodes
       a
         display: block
         text-decoration: none
-        
-#video-notes
-  min-width: 300px
-  max-width: 600px
+
 
 #game_icon 
   background-position: 0px 0px
