@@ -20,6 +20,9 @@ flex-justify()
   -webkit-justify-content: arguments
   justify-content: arguments
   
+headercolor = rgb(56, 102, 124)
+headerbordercolor = headercolor*0.8
+headerhighlightcolor = headercolor*1.25
 
 h1
   line-height: 28px
@@ -35,48 +38,52 @@ body
   font-size: 14px
   line-height: 18px
 
+  &>header
+    margin: 0px
+    padding: 0px
+    min-height: 24px
+    line-height: 24px
+    background-color: headercolor
+    
+    nav
+      margin: auto
+      max-width: 1024px
+
+      ul
+        flexbox()
+        flex-wrap()
+        flex-justify: space-around
+        list-style-type: none
+        margin: 0
+        padding: 0
+        border-right: 1px solid headerbordercolor
+
+        li
+          display: inline-block
+          flex: 1 1 auto
+          border-left: 1px solid headerbordercolor
+
+          a
+            display: block
+            padding: 4px
+            color: #ccc
+            text-align: center
+            text-decoration: none
+            
+            &:hover
+              background-color: headerhighlightcolor
+
   #outer_holder
     margin: 0 auto
-    margin-top: 128px
+    margin-top: 64px
     max-width: 1024px
     
     @media screen and (min-width: 1320px)
       max-width: 1300px
-
-    &>header
-      margin: 0px
-      padding: 0px
-      min-height: 24px
-      line-height: 24px
-      
-      nav
-
-        ul
-          flexbox()
-          flex-wrap()
-          flex-justify: space-around
-          list-style-type: none
-          margin: 0
-          padding: 0
-
-          li
-            display: inline-block
-            flex: 1 1 auto
-            margin-left: 3.5px
-            margin-right: 3.5px
-            margin-bottom: 1px
-
-            a
-              display: block
-              padding: 4px
-              background-color: rgb(56, 102, 124)
-              color: #ccc
-              text-align: center
-              text-decoration: none
     
     .back
       margin: 0px auto 20px auto
-      box-shadow: 0px 0px 128px 20px rgb(0, 0, 0)
+      box-shadow: 0px 0px 128px 20px rgb(0, 0, 0), 0px 0px 128px 20px rgb(0, 0, 0)
       
       .outer
         flexbox()

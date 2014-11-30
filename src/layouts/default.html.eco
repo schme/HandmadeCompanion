@@ -6,7 +6,6 @@
     <script src="<%= @rootPath() %>/vendor/jquery-2.1.1.min.js"></script>
 </head>
 <body>
-    <div id="outer_holder">
     <header>
         <nav>
             <ul>
@@ -20,11 +19,13 @@
             </ul>
         </nav>
     </header>
-    <div class="back">
-        <div class="outer">
-            <%- @content %>
+
+    <div id="outer_holder">
+        <div class="back">
+            <div class="outer">
+                <%- @content %>
+            </div>
         </div>
-    </div>
     </div>
     <%- @getBlock("scripts").toHTML() %>
 </body>

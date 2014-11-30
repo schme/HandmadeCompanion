@@ -1,54 +1,29 @@
-<html>
-<head>
-    <title><%= @document.title %> | Handmade Companion</title>
-    <%- @getBlock("meta").toHTML() %>
-    <%- @getBlock("styles").add([ @rootPath() + "/vendor/normalize.css", @rootPath() + "/styles/style.css"]).toHTML() %>
-</head>
-<body>
-    <div id="outer_holder">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">News</a></li>
-                <li><a href="/index.php/episode-guide">Episode Guide</a></li>
-                <li><a href="/index.php/platforms-and-tools">Platforms and Tools</a></li>
-                <li><a href="/index.php/component/kunena/handmade-hero-coding-discussion">Code Discussion</a></li>
-                <li><a href="/index.php/game-discussion">Game Discussion</a></li>
-                <li><a href="/index.php/search">Search</a></li>
-                <li><a href="/index.php/my-profile">My Profile</a></li>
-            </ul>
-        </nav>
-    </header>
+---
+layout: "default"
+---
 
-    <div class="back">
-        <div class="outer">
-            <div id="player-wrapper">
-                <div id="player" class="medium" data-video-id="<%= @document.videoId %>"></div>
-            </div>
+<div id="player-wrapper">
+    <div id="player" class="medium" data-video-id="<%= @document.videoId %>"></div>
+</div>
 
-            <% if @document.markers?: %>
-            <nav class="timecodes">
-                <ul name="markers">
-                <% for time, label of @document.markers: %>
-                    <li>
-                        <a href="#" class="marker-time" data-human-timecode="<%= time %>">
-                            <%= label %> (<%= time %>)
-                        </a>
-                    </li>
-                <% end %>
-                </ul>
-            </nav>
-            <% end %>
+<% if @document.markers?: %>
+<nav class="timecodes">
+    <ul name="markers">
+    <% for time, label of @document.markers: %>
+        <li>
+            <a href="#" class="marker-time" data-human-timecode="<%= time %>">
+                <%= label %> (<%= time %>)
+            </a>
+        </li>
+    <% end %>
+    </ul>
+</nav>
+<% end %>
 
-            <article id="video-notes">
-                <h1><%= @document.title %></h1>
-                <%- @content %>
-            </article>
-            
-        </div>
-    </div>
-    </div>
+<article id="video-notes">
+    <h1><%= @document.title %></h1>
+    <%- @content %>
+</article>
 
-    <%- @getBlock("scripts").add([@rootPath() + "/vendor/jquery-2.1.1.min.js",  @rootPath() + "/scripts/video.js", "https://www.youtube.com/iframe_api" ]).toHTML() %>
-</body>
-</html>
+<script src="<%= @rootPath() %>/scripts/video.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
