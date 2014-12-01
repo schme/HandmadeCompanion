@@ -40,6 +40,10 @@ docpadConfig = {
                 "/#{process.env["HOSTROOT"]}"
             else
                 ""
+
+        addScript: (src)->
+            @document.scripts = [] unless @document.scripts? 
+            @document.scripts.push(src) unless src in @document.scripts
 }
 
 # Export the DocPad Configuration

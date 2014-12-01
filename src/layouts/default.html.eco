@@ -17,11 +17,31 @@
     <header>
         <nav>
             <ul>
-                <li id="sitelabel">Handmade Hero Central</li>
-                <li><a href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=8">News</a></li><li><a href="/index.php?option=com_content&amp;view=article&amp;id=6">Episode Guide</a></li><li><a href="/index.php?option=com_content&amp;view=article&amp;id=8">Coding Resources</a></li><li><a href="/index.php?option=com_kunena&amp;view=category&amp;catid=4">Code Discussion</a></li><li><a href="/index.php?option=com_kunena&amp;view=category&amp;catid=5">Game Discussion</a></li>      
+                <li id="sitelabel">
+                    Handmade Hero Central
+                </li>
+                <li>
+                    <a href="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=8">News</a>
+                </li>
+                <li>
+                    <a href="/index.php?option=com_content&amp;view=article&amp;id=6">Episode Guide</a>
+                </li>
+                <li>
+                    <a href="/index.php?option=com_content&amp;view=article&amp;id=8">Coding Resources</a>
+                </li>
+                <li>
+                    <a href="/index.php?option=com_kunena&amp;view=category&amp;catid=4">Code Discussion</a>
+                </li>
+                <li>
+                    <a href="/index.php?option=com_kunena&amp;view=category&amp;catid=5">Game Discussion</a>
+                </li>      
             </ul>
         </nav>
     </header>
+
+    <% for scriptSrc in @document.scripts or []: %>
+        <script type="text/javascript" src="<%= scriptSrc %>"></script>
+    <% end %>
 
     <%- @getBlock("scripts").toHTML() %>
 </body>

@@ -25,5 +25,5 @@ layout: "default"
     <%- @content %>
 </article>
 
-<script src="<%= @rootPath() %>/scripts/video.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
+<% @addScript(@rootPath() + "/scripts/video.js") %>
+<% @addScript("https://www.youtube.com/iframe_api") %>
