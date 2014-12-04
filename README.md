@@ -14,7 +14,7 @@ We use [DocPad](https://docpad.org/) as a build tool to produce a static html si
 3. Run `npm start` to launch a local test server.
 4. Point your browser at the test server.
 
-The test server will monitor the source for changes, and will regernerate and cause the browaer to automatically refresh.
+The test server will monitor the source for changes, and will regenerate and cause the browaer to automatically refresh.
 
 ## License
 Copyright &copy; 2014+ All rights reserved.
