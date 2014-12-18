@@ -9,6 +9,7 @@ env:
   - secure: XPRcd7gHBEBk+YUVtvs0Q2vuuCuO/JRuj6BdPDWKEjMapdaPhqhMovwvRjkQZp+NvMDOeSnV/7jR1D+y5Zz+k0Fx/tul+YKggrh2u4K+xsqq+Fck12g7zs3bdFXlHza3sb9wbcT2WQpWefM38bH5ZNUCDzEbwR6sn4nv1vGHC0w=
 install:
   - sudo apt-get install wput
+  - npm install
 script:
   - docpad generate --env static
 after_success:
