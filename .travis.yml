@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '0.10'
+env:
+  global:
+  - secure: A9hRdZOuNWwfUaL5HooDK28xJUqKqPIFNbNF4fEVB10iHrW02StolBAbFy8D2J2b+v2f1RwFVPnN36wui3YOsbC3fDDN2A/waCwbwksvpum8QwVknyrgXWnLraviIn4VWNx8pFlk/nfRu9/bMvnwOswX74BcSxtLXe9LeJnJffQ=
+  - secure: U9EX1G9yfTr8A/JdLw6f1lKLpig8SbOjWh+t8+PLqzNp06ufPmsvJuUp7DqglMed5zQIRx3oT9AYFfY+xm9fRKY6A3jtSA6EkAhYxOqV02pnMXvrh3Xgqf1zgEIbvLX1yY0bkWYCjqllgg1v2Q2i8cC1lkJaLimykKajqdwr0M8=
+  - secure: EVxFSS1SQ7oR3rgIN571pTPwkbXtcrNoZnep4/PlkcLSsK05aViSishLannRyGlh6hGEiSHK3E2zpGJlxOGW7v+NgTYL/kyqkk7L7rV0rkg1GDsfoztFv74hrlP1gTUtsCMc30zF5kgngXnr3/oueXuxsXirduhQQBl9Gq+YVqM=
+  - secure: XPRcd7gHBEBk+YUVtvs0Q2vuuCuO/JRuj6BdPDWKEjMapdaPhqhMovwvRjkQZp+NvMDOeSnV/7jR1D+y5Zz+k0Fx/tul+YKggrh2u4K+xsqq+Fck12g7zs3bdFXlHza3sb9wbcT2WQpWefM38bH5ZNUCDzEbwR6sn4nv1vGHC0w=
+install:
+  - sudo apt-get install wput
+script:
+  - docpad generate --env static
+after_success:
+  - wput out ftp://$FTP_USER:$FTP_PASS@$FTP_HOST/ --less-verbose --reupload --basename=out/
+
