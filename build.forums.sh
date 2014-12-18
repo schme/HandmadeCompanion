@@ -1,1 +1,0 @@
-HOSTROOT=jace $(npm bin)/docpad generate --env static
