@@ -106,8 +106,8 @@ categories:
 
 ---
 
-<% twit = (s) -> s.replace(/@(\w+)/g, '<a href="https://twitter.com/$1">@$1</a>') %>
-<%- twit(@document.thanks) %>
+<% twit = (s) -> s.replace(/@(\w+)/g, '[@$1](https://twitter.com/$1)') %>
+<%= twit(@document.thanks) %>
 
 <%= @document.howto %>
 
