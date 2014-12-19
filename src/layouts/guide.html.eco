@@ -1,0 +1,32 @@
+---
+layout: "default"
+---
+
+<article>
+    <header>
+        <h2><%= @document.title %></h2>
+    </header>
+
+    <%- @content %>
+</article>
+
+<div class="sidebar">
+    <article id="game_ad">
+        <div class="sidebar-heading">Preorder the Game,<br>Get the Source!</div>
+        <div id="game_icon"></div>
+        <div id="game_description">
+            - Instant source code access<br>
+            - Full access to nightly updates<br>
+            - DRM-free copy of final game
+        </div>
+        <div id="purchase_buy">
+            <a id="buy_now" href="https://transactions.sendowl.com/packages/6671/8CB9DE0F/purchase" rel="nofollow">
+                PREORDER NOW - $15
+                <script type="text/javascript" src="https://transactions.sendowl.com/assets/sendowl.js"></script>
+            </a>
+        </div>
+        <div id="paypal">
+            Or <a href="https://transactions.sendowl.com/packages/6671/8CB9DE0F/purchase" rel="nofollow">preorder via Paypal</a>.
+        </div>
+    </article>
+</div>
