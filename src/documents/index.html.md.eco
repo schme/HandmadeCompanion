@@ -97,8 +97,7 @@ categories:
         time to do crazy, fun, and useful stuff with our Win32
         layer.
     days:
-        [day021, day022, day023, day024,
-         Day 025: Airs December 19th at 11AM PST]
+        [day021, day022, day023, day024, day025]
 
   - title: "Week 6: Game Engine Architecture"
     description: 'It begins.'
