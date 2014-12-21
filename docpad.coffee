@@ -3,7 +3,7 @@
 
 # Define the DocPad Configuration
 docpadConfig = {
-	plugins:
+    plugins:
 
     collections:
         videoPages: ->
