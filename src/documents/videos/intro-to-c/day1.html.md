@@ -28,4 +28,6 @@ markers:
 
 ##Updates
 
-Since This video was released Microsoft has made [Visual Studio Community 2013](http://www.visualstudio.com/products/visual-studio-community-vs) available for free to small teams. Since it is much closer to the Professional version of the tools, using it is recommended over the Express Editions discussed here.
+Since this video was released, Microsoft has made [Visual Studio Community 2013](http://www.visualstudio.com/products/visual-studio-community-vs)
+available for free to small teams. Since it is much closer to the Professional version of the tools, using it is
+recommended over the Express Editions discussed here.
