@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title><%= @document.title %> | Handmade Companion</title>
+    <title><%= @document.title %> | <%= @site.title %></title>
     <%- @getBlock("meta").toHTML() %>
     <%- @getBlock("styles").add([ @rootPath() + "/vendor/normalize.css", @rootPath() + "/styles/style.css"]).toHTML() %>
     <script src="<%= @rootPath() %>/vendor/jquery-2.1.1.min.js"></script>
