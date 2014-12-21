@@ -3,8 +3,6 @@
 
 # Define the DocPad Configuration
 docpadConfig = {
-    plugins:
-
     collections:
         videoPages: ->
             @getCollection("html").findAllLive({relativeOutDirPath: {$beginsWith: "videos"}}).on "add", (model) ->
