@@ -2,40 +2,6 @@
 title: "Episode Guide"
 layout: "guide"
 
-thanks: >
-    *The detailed episode guides linked to on this page would
-    not have been possible without the generous contributions
-    of time and energy from
-
-    Jace Bennett (@jacebennett),
-    Abner Coimbre (@abnercoimbre),
-    Matthew VanDevander (@mvandevander),
-    Gustavo Chavez (@gusChvz),
-    Kasper Sauramo (@KMSchme),
-    and Ben Craddock (@theinternetftw).
-
-    Please take a moment to thank them if you happen to see them
-    on The Twitters! :)*
-
-howto: >
-    ### How to Use This Guide
-
-    Handmade Hero is broken up into four parts: a basic programming
-    introduction, the construction of a platform prototyping layer,
-    the coding of a game engine, and the coding of the game itself.
-    These parts can be fluid, and blur into one another, but if you
-    would like to skip directly to one of the parts without watching
-    the preceding ones, you may be able to do so, depending on your
-    level of experience.
-
-    - The basic (very limited) introduction to C programming is **Week 0**.
-
-    - The construction of a Win32 prototyping layer is **Weeks 1 through 5**.
-
-    - Game engine coding begins on **Week 6**.
-
-    - Game coding itself has not yet begun.
-
 categories:
 
   - title: "Text Editor Tutorial"
@@ -99,9 +65,50 @@ categories:
         [day021, day022, day023, day024, day025]
 
   - title: "Week 6: Game Engine Architecture"
-    description: 'It begins.'
-    days: [Airs December 22nd through the 26th]
+    description: >
+        The sixth week of Handmade Hero will begin to lay the
+        foundation of the game upon the platform work done over
+        the previous weeks.
+    days:
+        [day026,
+        "Day 027: Aired December 23rd at 8AM PST",
+        "Day 028: Airs December 24th at 10AM PST",
+        "Day 029: Airs December 25th at 10AM PST",
+        "Day 030: Airs December 26th at 10AM PST"]
 
+thanks: >
+    *The detailed episode guides linked to on this page would
+    not have been possible without the generous contributions
+    of time and energy from
+
+    Jace Bennett (@jacebennett),
+    Abner Coimbre (@abnercoimbre),
+    Matthew VanDevander (@mvandevander),
+    Gustavo Chavez (@gusChvz),
+    Kasper Sauramo (@KMSchme),
+    and Ben Craddock (@theinternetftw).
+
+    Please take a moment to thank them if you happen to see them
+    on The Twitters! :)*
+
+howto: >
+    ### How to Use This Guide
+
+    Handmade Hero is broken up into four parts: a basic programming
+    introduction, the construction of a platform prototyping layer,
+    the coding of a game engine, and the coding of the game itself.
+    These parts can be fluid, and blur into one another, but if you
+    would like to skip directly to one of the parts without watching
+    the preceding ones, you may be able to do so, depending on your
+    level of experience.
+
+    - The basic (very limited) introduction to C programming is **Week 0**.
+
+    - The construction of a Win32 prototyping layer is **Weeks 1 through 5**.
+
+    - Game engine coding begins on **Week 6**.
+
+    - Game coding itself has not yet begun.
 ---
 
 <% twit = (s) -> s.replace(/@(\w+)/g, '[@$1](https://twitter.com/$1)') %>
