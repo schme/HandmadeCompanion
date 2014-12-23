@@ -1,46 +1,39 @@
 ---
 title: "Episode Guide"
 layout: "guide"
-
-thanks: >
-    *The detailed episode guides linked to on this page would
-    not have been possible without the generous contributions
-    of time and energy from
-
-    Jace Bennett (@jacebennett),
-    Abner Coimbre (@abnercoimbre),
-    Matthew VanDevander (@mvandevander),
-    Gustavo Chavez (@gusChvz),
-    Kasper Sauramo (@KMSchme),
-    and Ben Craddock (@theinternetftw).
-
-    Please take a moment to thank them if you happen to see them
-    on The Twitters! :)*
-
-howto: >
-    ### How to Use This Guide
-
-    Handmade Hero is broken up into four parts: a basic programming
-    introduction, the construction of a platform prototyping layer,
-    the coding of a game engine, and the coding of the game itself.
-    These parts can be fluid, and blur into one another, but if you
-    would like to skip directly to one of the parts without watching
-    the preceding ones, you may be able to do so, depending on your
-    level of experience.
-
-    - The basic (very limited) introduction to C programming is **Week 0**.
-
-    - The construction of a Win32 prototyping layer is **Weeks 1 through 5**.
-
-    - Game engine coding begins on **Week 6**.
-
-    - Game coding itself has not yet begun.
 ---
 
-<% twit = (s) -> s.replace(/@(\w+)/g, '[@$1](https://twitter.com/$1)') %>
-<%= twit(@document.thanks) %>
+<% twit = (name) -> "[@#{name}](https://twitter.com/#{name})" %>
 
-<%= @document.howto %>
+*The detailed episode guides linked to on this page would
+not have been possible without the generous contributions
+of time and energy from
+Jace Bennett (<%= twit "jacebennett" %>),
+Abner Coimbre (<%= twit "abnercoimbre" %>),
+Matthew VanDevander (<%= twit "mvandevander" %>),
+Gustavo Chavez (<%= twit "gusChvz" %>),
+Kasper Sauramo (<%= twit "KMSchme" %>),
+and Ben Craddock (<%= twit "theinternetftw" %>).
+Please take a moment to thank them if you happen to see them
+on The Twitters! :)*
+
+### How to Use This Guide
+
+Handmade Hero is broken up into four parts: a basic programming
+introduction, the construction of a platform prototyping layer,
+the coding of a game engine, and the coding of the game itself.
+These parts can be fluid, and blur into one another, but if you
+would like to skip directly to one of the parts without watching
+the preceding ones, you may be able to do so, depending on your
+level of experience.
+
+- The basic (very limited) introduction to C programming is **Week 0**.
+
+- The construction of a Win32 prototyping layer is **Weeks 1 through 5**.
+
+- Game engine coding begins on **Week 6**.
+
+- Game coding itself has not yet begun.
 
 <% {categories} = @getFile({fullPath: $like: 'table_of_contents.yaml'}).toJSON() %>
 <% for cat in categories: %>
