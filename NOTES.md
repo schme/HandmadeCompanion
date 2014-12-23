@@ -33,6 +33,6 @@ like so:
 
     days: [day1, day2,
           'Day3: Aired but still being processed by Youtube',
-          'Day4: Airing tomorrow. Same Owl Time, Same Owl Channel.']
+          'Day4: Airing tomorrow. Shame Owl Time, Shame Owl Channel.']
 
 And the index will do the right thing.
