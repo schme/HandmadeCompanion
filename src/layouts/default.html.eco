@@ -2,18 +2,14 @@
 <head>
     <title><%= @document.title %> | <%= @site.title %></title>
     <%- @getBlock("meta").toHTML() %>
-    <%- @getBlock("styles").add([ @rootPath() + "/vendor/normalize.css", @rootPath() + "/styles/style.css"]).toHTML() %>
-    <script src="<%= @rootPath() %>/vendor/jquery-2.1.1.min.js"></script>
+    <%- @getBlock("styles").toHTML() %>
+    <%- @sheetLink(@rootPath() + "/vendor/normalize.css") %>
+    <%- @sheetLink(@rootPath() + "/styles/style.css") %>
+    <% for sheetSrc in @document.sheets or []: %>
+        <%- @sheetLink sheetSrc %>
+    <% end %>
 </head>
 <body>
-    <div id="outer_holder">
-        <div class="back">
-            <div class="outer">
-                <%- @content %>
-            </div>
-        </div>
-    </div>
-
     <header>
         <nav>
             <ul>
@@ -38,11 +34,19 @@
             </ul>
         </nav>
     </header>
+    
+    <div id="outer_holder">
+        <div class="back">
+            <div class="outer">
+                <%- @content %>
+            </div>
+        </div>
+    </div>
 
+    <%- @scriptLink(@rootPath() + "/vendor/jquery-2.1.1.min.js") %>
     <% for scriptSrc in @document.scripts or []: %>
-        <script type="text/javascript" src="<%= scriptSrc %>"></script>
+        <%- @scriptLink scriptSrc %>
     <% end %>
-
     <%- @getBlock("scripts").toHTML() %>
 </body>
 </html>
