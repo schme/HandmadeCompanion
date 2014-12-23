@@ -46,14 +46,15 @@ level of experience.
 <li>
 
 <% folder = cat.folder or '' %>
-<% likeDay = fullPath: $like: day %>
+<% dayName = day.name or day %>
+<% likeDay = fullPath: $like: dayName %>
 <% likeFolder = fullPath: $like: folder %>
 <% pages = @getFiles(likeDay).findAll(likeFolder).toJSON() %>
 
 <% if pages.length > 0: %>
  
- <% if day.match(/^day\d+$/i): %>
-  <%= 'Day '+day.slice(3)+":" %>
+ <% if dayName.match(/^day\d+$/i): %>
+  <%= 'Day '+dayName.slice(3)+":" %>
  <% end %>
  
  <% for page, i in pages: %>
@@ -63,6 +64,8 @@ level of experience.
   [<%= linktext %>](<%= url %>)<%= sep %>
  <% end %>
  
+<% else if day.placeholder: %>
+ <%= day.placeholder %>
 <% else: %>
  <%= day %>
 <% end %>

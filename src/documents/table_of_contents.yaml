@@ -69,7 +69,7 @@ categories:
     days:
         [day026,
          day027,
-        "Day 028: Airs December 24th at 10AM PST",
-        "Day 029: Airs December 25th at 10AM PST",
-        "Day 030: Airs December 26th at 10AM PST"]
+         {name: day028, placeholder: "Day 028: Airs December 24th at 10AM PST"},
+         {name: day029, placeholder: "Day 029: Airs December 25th at 10AM PST"},
+         {name: day030, placeholder: "Day 030: Airs December 26th at 10AM PST"}]
 ---
