@@ -1,0 +1,75 @@
+---
+categories:
+
+  - title: "Text Editor Tutorial"
+    description: >
+        By popular demand, Casey goes through his emacs setup.
+    days:
+        [emacs]
+
+  - title: "Week 0: Intro to C"
+    folder: "intro-to-c"
+    description: >
+        Before starting Handmade Hero, I did a five-day
+        series on C programming to test the Twitch streaming
+        set up.  It is too brief to be a complete introduction
+        to C, but may be better than nothing if you are trying
+        to start from scratch.  At some point, when there is
+        time, I may try to do a more complete intro series for
+        people who want to follow Handmade Hero but have little
+        or no programming experience.
+    days:
+       [day1, day2, day3, day4, day5]
+
+  - title: "Week 1: Simple Framebuffer on Windows"
+    description: >
+        The first week of Handmade Hero was spent setting up a
+        Windows build, creating a window, and making it so that
+        we could directly write animating graphics into a framebuffer
+        and have Windows display it in our window.
+    days:
+        [day001, day002, day003, day004, day005]
+
+  - title: "Week 2: Sound and Input on Windows"
+    description: >
+        The second week of Handmade was spent getting sound,
+        input, and timing working.
+    days:
+        [day006, day007, day008, day009, day010]
+
+  - title: "Week 3: Defining the Platform Layer Boundary"
+    description: >
+        The third week of Handmade Hero had us abstracting our
+        Win32 code so we could divide the project into
+        platform-specific and platform-independent parts.
+    days:
+        [day011, day012, day013, day014, day015]
+
+  - title: "Week 4: Win32 Prototyping Layer Cleanup"
+    description: >
+        The fourth week of Handmade Hero was spent cleaning up
+        our Win32 code, and getting to a lot of the "TODO" markers
+        we put in the source code.
+    days:
+        [day016, day017, day018, day019, day020]
+
+  - title: "Week 5: Fun with Win32"
+    description: >
+        The fifth week of Handmade Hero is all about taking some
+        time to do crazy, fun, and useful stuff with our Win32
+        layer.
+    days:
+        [day021, day022, day023, day024, day025]
+
+  - title: "Week 6: Game Engine Architecture"
+    description: >
+        The sixth week of Handmade Hero will begin to lay the
+        foundation of the game upon the platform work done over
+        the previous weeks.
+    days:
+        [day026,
+        "Day 027: Aired December 23rd at 8AM PST",
+        "Day 028: Airs December 24th at 10AM PST",
+        "Day 029: Airs December 25th at 10AM PST",
+        "Day 030: Airs December 26th at 10AM PST"]
+---

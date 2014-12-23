@@ -3,6 +3,8 @@
 ## Contributing
 You can add a new video or edit a page for one by editing the corresponding **\*.html.md** file in **src/documents/videos/\*/**
 
+If you want to do more than that, read NOTES.md
+
 Pull requests are more than welcome.
 
 ## Running Locally
