@@ -46,9 +46,11 @@ level of experience.
 <li>
 
 <% folder = cat.folder or '' %>
-<% dayName = day.name or day %>
+<% dayName = if typeof(day) == "string" then day else Object.keys(day)[0] %>
+<% placeholder = day[dayName] if typeof(day) == "object" %>
 <% likeDay = fullPath: $like: dayName %>
 <% likeFolder = fullPath: $like: folder %>
+
 <% pages = @getFiles(likeDay).findAll(likeFolder).toJSON() %>
 
 <% if pages.length > 0: %>
@@ -64,8 +66,8 @@ level of experience.
   [<%= linktext %>](<%= url %>)<%= sep %>
  <% end %>
  
-<% else if day.placeholder: %>
- <%= day.placeholder %>
+<% else if placeholder?: %>
+ <%= placeholder %>
 <% else: %>
  <%= day %>
 <% end %>
