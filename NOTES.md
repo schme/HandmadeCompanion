@@ -27,12 +27,16 @@ of C week could accidentally match day100), the optional folder parameter
 can be included.  But by default it searches through everything which
 is usually completely fine.
 
-If you want to include a message instead of a link to a video, e.g.
-Day025: Airs at 11PM on December 17th, you can just include that inline
-like so:
+You can set up days in advance by including a placeholder. That looks
+like this:
 
-    days: [day1, day2,
-          'Day3: Aired but still being processed by Youtube',
-          'Day4: Airing tomorrow. Shame Owl Time, Shame Owl Channel.']
+    days: [
+        day1,
+        day2,
+        {name: day3, placeholder: 'Day3: Airing December 1st.'},
+        {name: day4, placeholder: 'Day4: Airing December 2nd. Shame Owl Time, Shame Owl Channel.'}
+    ]
 
-And the index will do the right thing.
+With this you can add a week to the yaml and it will update itself,
+automatically replacing placeholder text with links as video stubs
+show up that match the day names.
