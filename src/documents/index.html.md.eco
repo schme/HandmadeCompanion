@@ -47,7 +47,7 @@ level of experience.
 
 <% folder = cat.folder or '' %>
 <% dayName = if typeof(day) == "string" then day else Object.keys(day)[0] %>
-<% placeholder = day[dayName] if typeof(day) == "object" %>
+<% placeholder = if typeof(day) == "object" then day[dayName] else '' %>
 <% likeDay = fullPath: $like: dayName %>
 <% likeFolder = fullPath: $like: folder %>
 
@@ -66,7 +66,7 @@ level of experience.
   [<%= linktext %>](<%= url %>)<%= sep %>
  <% end %>
  
-<% else if placeholder?: %>
+<% else if placeholder: %>
  <%= placeholder %>
 <% else: %>
  <%= day %>
