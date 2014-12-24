@@ -33,8 +33,8 @@ like this:
     days: [
         day1,
         day2,
-        {name: day3, placeholder: 'Day3: Airing December 1st.'},
-        {name: day4, placeholder: 'Day4: Airing December 2nd. Shame Owl Time, Shame Owl Channel.'}
+        day3: 'Day3: Airing December 1st.',
+        day4: 'Airing December 2nd. Shame Owl Time, Shame Owl Channel.'
     ]
 
 With this you can add a week to the yaml and it will update itself,
