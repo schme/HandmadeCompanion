@@ -1,4 +1,5 @@
 ---
+isPage: false
 categories:
 
   - title: "Text Editor Tutorial"
@@ -67,9 +68,9 @@ categories:
         foundation of the game upon the platform work done over
         the previous weeks.
     days:
-        [day026,
-         day027,
-         {name: day028, placeholder: "Day 028: Airs December 24th at 10AM PST"},
-         {name: day029, placeholder: "Day 029: Airs December 25th at 10AM PST"},
-         {name: day030, placeholder: "Day 030: Airs December 26th at 10AM PST"}]
+      - day026
+      - day027
+      - day028: "Day 028: Airs December 24th at 10AM PST"
+      - day029: "Day 029: Airs December 25th at 10AM PST"
+      - day030: "Day 030: Airs December 26th at 10AM PST"
 ---
