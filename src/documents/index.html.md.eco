@@ -51,8 +51,6 @@ level of experience.
 <% likeDay = fullPath: $like: dayName %>
 <% likeFolder = fullPath: $like: folder %>
 
-<% debugger %>
-
 <% pages = @getFiles(likeDay).findAll(likeFolder).toJSON() %>
 
 <% if pages.length > 0: %>
