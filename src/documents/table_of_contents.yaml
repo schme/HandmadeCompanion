@@ -19,7 +19,7 @@ categories:
         people who want to follow Handmade Hero but have little
         or no programming experience.
     days:
-       [day1, day2, day3, day4, day5]
+        [day1, day2, day3, day4, day5]
 
   - title: "Week 1: Simple Framebuffer on Windows"
     description: >
@@ -62,14 +62,11 @@ categories:
         [day021, day022, day023, day024, day025]
 
   - title: "Week 6: Game Engine Architecture"
+    folder: "game-architecture"
     description: >
         The sixth week of Handmade Hero will begin to lay the
         foundation of the game upon the platform work done over
         the previous weeks.
     days:
-      - day026
-      - day027
-      - day028: "Day 028: Airs December 24th at 10AM PST"
-      - day029: "Day 029: Airs December 25th at 10AM PST"
-      - day030: "Day 030: Airs December 26th at 10AM PST"
+        [day026, day027, day028, day029, day030]
 ---
