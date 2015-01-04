@@ -64,20 +64,17 @@ categories:
   - title: "Week 6: Game Engine Architecture"
     folder: "game-architecture"
     description: >
-        The sixth week of Handmade Hero will begin to lay the
+        The sixth week of Handmade Hero spends time laying the
         foundation of the game upon the platform work done over
         the previous weeks.
     days:
         [day026, day027, day028, day029, day030]
 
-  - title: "Week 7: Title TBA"
+  - title: "Week 7: Coordinates and Tilemaps"
     description: >
-        The seventh week of Handmade Hero hasn't been going on
-        long enough to give it a title or description
+        The seventh week of Handmade Hero is about figuring
+        out how we want to store the game world, as well as
+        how to represent positions within that world.
     days:
-        - day031: "Day 031: Airs December 29th at 8PM PST"
-        - day032: "Day 032: Airs December 30th at 8PM PST"
-        - day033: "Day 033: Airs December 31st at 10AM PST"
-        - day034: "Day 034: Airs January 1st at 8PM PST"
-        - day035: "Day 035: Airs January 2nd at 10AM PST"
+        [day031, day032, day033, day034, day035]
 ---
