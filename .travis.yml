@@ -13,5 +13,5 @@ install:
 script:
   - docpad generate --env static
 after_success:
-  - wput out ftp://$FTP_USER:$FTP_PASS@$FTP_HOST/ --verbose --reupload --dont-continue --basename=out/
+  - wput out ftp://$FTP_USER:$FTP_PASS@$FTP_HOST/ --verbose --verbose --reupload --dont-continue --basename=out/
 
