@@ -40,6 +40,7 @@ body
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   font-size: 14px
   line-height: 18px
+  color: #222
 
   a
     color: #995200
@@ -47,6 +48,7 @@ body
 
     &:hover
       color: #995200
+      text-decoration: underline
 
   &>header
     position: absolute
@@ -94,17 +96,18 @@ body
             padding: 4px
             color: #ccc
             text-align: center
-            text-decoration: none
             
             &:hover
               background-color: headerhighlightcolor
               text-decoration: underline
               color: #fff
+            &:visited
+              color: #ccc
 
   #outer_holder
     margin: 0 auto
     margin-top: 64px
-    max-width: 1024px
+    max-width: 1014px
     
     @media screen and (min-width: 1320px)
       max-width: 1300px
@@ -133,18 +136,24 @@ body
             margin: 0px 0px 8px 0px
             padding: 0px
 
-
         article
-          margin: 5.5px
+          margin: 5px
           box-shadow: 0px 0px 4px rgb(0, 0, 0)
-          padding: 30px
           background-color: #ddd
+
+        &>article
+          padding: 40px
+          min-width: 300px
           
         &>.sidebar
-          flex: 0 0 271px
-          
-          article
+          max-width: 260px
+
+          &>div
+            margin: 6px
+            box-shadow: 0px 0px 4px rgb(0, 0, 0)
+            background-color: #ddd
             width: 200px
+            margin-bottom: 12px
 
 #player-wrapper
   display: inline-block
@@ -224,11 +233,10 @@ nav.timecodes
   background-size:cover
   box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.7)
   height: 113px
-  margin: 0px 0px 6px 0px
+  margin: 0px 0px 4px 0px
 
 .sidebar-heading
-  margin: 0px 0px 16px 0px
-  padding: 0
+  margin: 0px 0px 16px
   font-size:18px
   line-height:24px
   font-weight:bold
@@ -237,15 +245,17 @@ nav.timecodes
   text-shadow:1px 1px 2px rgba(0,0,0,0.25)
   text-align:center
 
+#game_ad
+  padding: 10px
+
 #game_description 
   font-size: 13px
   text-align: left
   line-height: 21px
   color:#666
-  top: -2px
 
 #purchase_buy 
-  margin: 4px 0px 0px 0px
+  margin: 6px 0px 0px 0px
   padding: 12px 0px 0px 0px
   text-align: center
 
@@ -257,7 +267,6 @@ nav.timecodes
   font-size: 13px
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5), inset 0px -10px 4px -8px rgba(0, 0, 0, 1.0)
   font-weight: bold
-  text-decoration: none
   
 #buy_now:hover
   background-color: #6B93A7
@@ -266,5 +275,5 @@ nav.timecodes
 
 #paypal
   text-align: center
-  margin: 16px 0 0 0
+  margin: 14px 0 -3px 0
   font-size: 12px

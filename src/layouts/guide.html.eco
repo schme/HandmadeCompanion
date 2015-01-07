@@ -2,16 +2,20 @@
 layout: "default"
 ---
 
-<article>
+<style>
+    body #outer_holder { max-width: 1024px; }
+</style>
+
+<article id="guide_text">
     <header>
-        <h2><%= @document.title %></h2>
+        <h2><a href="<%= @site.url %>"><%= @document.title %></a></h2>
     </header>
 
     <%- @content %>
 </article>
 
 <div class="sidebar">
-    <article id="game_ad">
+    <div id="game_ad">
         <div class="sidebar-heading">Preorder the Game,<br>Get the Source!</div>
         <div id="game_icon"></div>
         <div id="game_description">
@@ -28,5 +32,12 @@ layout: "default"
         <div id="paypal">
             Or <a href="https://transactions.sendowl.com/packages/6671/8CB9DE0F/purchase" rel="nofollow">preorder via Paypal</a>.
         </div>
-    </article>
+    </div>
+    <div id="game_ad">
+        <div class="sidebar-heading">Looking for a way to<br>support the series?</div>
+        <div id="game_description">
+             If you'd like to show your support for the Handmade Hero video series,
+             <a href="http://patreon.com/cmuratori">Casey now has a page on Patreon</a>.
+        </div>
+    </div>
 </div>

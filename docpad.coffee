@@ -11,6 +11,7 @@ docpadConfig = {
     templateData:
         site:
             title: "Handmade Companion"
+            url: "https://forums.handmadehero.org/jace/"
 
         rootPath: ->
             if process.env["HOSTROOT"]?

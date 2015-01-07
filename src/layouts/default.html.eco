@@ -1,6 +1,7 @@
 <html>
 <head>
     <title><%= @document.title %> | <%= @site.title %></title>
+    <link rel="icon" type="image/png" href="https://forums.handmadehero.org/favicon.png">
     <%- @getBlock("meta").toHTML() %>
     <%- @getBlock("styles").toHTML() %>
     <%- @sheetLink(@rootPath() + "/vendor/normalize.css") %>
