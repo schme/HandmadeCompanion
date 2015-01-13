@@ -77,13 +77,21 @@ categories:
         how to represent positions within that world.
     days:
         [day031, day032, day033, day034, day035]
-  - title: "Week 8"
+
+  - title: "Week 8: Bitmaps"
     description: >
-        The eighth week of Handmade Hero is about to begin.
+        The eighth week of Handmade Hero focuses on loading
+        and displaying our first asset files.
     days:
-        - day036: "Day 036: Airs January 5th at 8PM PST"
-        - day037: "Day 037: Airs January 6th at 8PM PST"
-        - day038: "Day 038: Airs January 7th at 8PM PST"
-        - day039: "Day 039: Airs January 8th at 8PM PST"
-        - day040: "Day 040: Airs January 9th at 9AM PST"
+        [day036, day037, day038, day039, day040]
+
+  - title: "Week 9"
+    description: >
+        The ninth week of Handmade Hero is in progress.
+    days:
+        - day041: "Day 041: Airs January 12th at 8PM PST"
+        - day042: "Day 042: Airs January 13th at 8PM PST"
+        - day043: "Day 043: Airs January 14th at 8PM PST"
+        - day044: "Day 044: Airs January 15th at 8PM PST"
+        - day045: "Day 045: Airs January 16th at 9AM PST"
 ---
