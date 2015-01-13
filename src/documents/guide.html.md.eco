@@ -1,0 +1,80 @@
+---
+title: "Episode Guide"
+layout: "guide"
+---
+
+<% twit = (name) -> "[@#{name}](https://twitter.com/#{name})" %>
+
+*The detailed episode guides linked to on this page would
+not have been possible without the generous contributions
+of time and energy from
+Jace Bennett (<%= twit "jacebennett" %>),
+Abner Coimbre (<%= twit "abnercoimbre" %>),
+Matthew VanDevander (<%= twit "mvandevander" %>),
+Gustavo Chavez (<%= twit "gusChvz" %>),
+Kasper Sauramo (<%= twit "KMSchme" %>),
+Ben Craddock (<%= twit "theinternetftw" %>),
+and Dustin Specht (<%= twit "Dustin_Specht" %>).
+Please take a moment to thank them if you happen to see them
+on The Twitters! :)*
+
+### How to Use This Guide
+
+Handmade Hero is broken up into four parts: a basic programming
+introduction, the construction of a platform prototyping layer,
+the coding of a game engine, and the coding of the game itself.
+These parts can be fluid, and blur into one another, but if you
+would like to skip directly to one of the parts without watching
+the preceding ones, you may be able to do so, depending on your
+level of experience.
+
+- The basic (very limited) introduction to C programming is **Week 0**.
+
+- The construction of a Win32 prototyping layer is **Weeks 1 through 5**.
+
+- Game engine coding begins on **Week 6**.
+
+- Game coding itself has not yet begun.
+
+<% {categories} = @getFile({fullPath: $like: 'table_of_contents.yaml'}).toJSON() %>
+<% for cat in categories: %>
+
+### <%= cat.title %>
+<%= cat.description %>
+
+<ul>
+<% for day in cat.days: %>
+<li>
+
+<% folder = cat.folder or '' %>
+<% dayName = if typeof(day) == "string" then day else Object.keys(day)[0] %>
+<% placeholder = if typeof(day) == "object" then day[dayName] else '' %>
+<% likeDay = fullPath: $like: dayName %>
+<% likeFolder = fullPath: $like: folder %>
+
+<% pages = @getFiles(likeDay).findAll(likeFolder, [name:1]).toJSON() %>
+
+<% if pages.length > 0: %>
+ 
+ <% if dayName.match(/^day\d+$/i): %>
+  <%= 'Day '+dayName.slice(3)+":" %>
+ <% end %>
+ 
+ <% for page, i in pages: %>
+  <% url = @rootPath() + page.url %>
+  <% linktext = if page.basename.match(/qa/i) then 'Q&A' else page.title %>
+  <% sep = if i < pages.length-1 then ' + ' else '' %>
+  [<%= linktext %>](<%= url %>)<%= sep %>
+ <% end %>
+ 
+<% else if placeholder: %>
+ <%= placeholder %>
+<% else: %>
+ <%= day %>
+<% end %>
+
+</li>
+<% end %>
+</ul>
+
+<% end %>
