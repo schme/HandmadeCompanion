@@ -18,7 +18,7 @@
                     <a href="/">Handmade Hero Central</a>
                 </li>
                 <li id="activenav">
-                    <a href="/index.php?option=com_content&amp;view=article&amp;id=6">Episode Guide</a>
+                    <a href="<%= @site.guide_url %>">Episode Guide</a>
                 </li>
                 <li>
                     <a href="/index.php?option=com_content&amp;view=article&amp;id=8">Coding Resources</a>
