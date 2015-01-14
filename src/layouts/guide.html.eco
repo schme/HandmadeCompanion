@@ -8,7 +8,7 @@ layout: "default"
 
 <article id="guide_text">
     <header>
-        <h2><a href="<%= @site.url %>"><%= @document.title %></a></h2>
+        <h2><a href="<%= @site.guide_url %>"><%= @document.title %></a></h2>
     </header>
 
     <%- @content %>
