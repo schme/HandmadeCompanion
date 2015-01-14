@@ -3,7 +3,8 @@ categories:
 
   - title: "Text Editor Tutorial"
     description: >
-        By popular demand, Casey goes through his emacs setup.
+        By popular demand, Casey goes through his emacs setup
+        and shows how he makes use of the text editor.
     days:
         [emacs]
 
