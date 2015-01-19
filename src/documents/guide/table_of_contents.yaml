@@ -86,13 +86,20 @@ categories:
     days:
         [day036, day037, day038, day039, day040]
 
-  - title: "Week 9"
+  - title: "Week 9: Vector Math and Player Movement"
     description: >
-        The ninth week of Handmade Hero is in progress.
+        The ninth week of Handmade Hero introduces vectors and
+        begins the process of using them to improve character motion.
     days:
-        - day041: "Day 041: Airs January 12th at 8PM PST"
-        - day042: "Day 042: Airs January 13th at 8PM PST"
-        - day043: "Day 043: Airs January 14th at 8PM PST"
-        - day044: "Day 044: Airs January 15th at 8PM PST"
-        - day045: "Day 045: Airs January 16th at 9AM PST"
+        [day041, day042, day043, day044, day045]
+
+  - title: "Week 10"
+    description: >
+        The tenth week of Handmade Hero is in progress.
+    days:
+        - day046: "Day 046: Airs January 19th at 8PM PST"
+        - day047: "Day 047: Airs January 20th at 8:30PM PST"
+        - day048: "Day 048: Airs January 21st at 8PM PST"
+        - day049: "Day 049: Airs January 22nd at 8PM PST"
+        - day050: "Day 050: Airs January 23rd at 9AM PST"
 ---
