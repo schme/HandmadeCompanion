@@ -93,13 +93,20 @@ categories:
     days:
         [day041, day042, day043, day044, day045]
 
-  - title: "Week 10"
+  - title: "Week 10: Player Collision"
     description: >
-        The tenth week of Handmade Hero is in progress.
+        The tenth week of Handmade Hero concentrates on iteratively
+        improving the nascent collision detection code.
     days:
-        - day046: "Day 046: Airs January 19th at 8PM PST"
-        - day047: "Day 047: Airs January 20th at 8:30PM PST"
-        - day048: "Day 048: Airs January 21st at 8PM PST"
-        - day049: "Day 049: Airs January 22nd at 8PM PST"
-        - day050: "Day 050: Airs January 23rd at 9AM PST"
+        [day046, day047, day048, day049, day050]
+
+  - title: "Week 11" 
+    description: >
+        The eleventh week of Handmade Hero is in progress.
+    days:
+        - day051: "Day 051: Airs January 26th at 8PM PST"
+        - day052: "Day 052: Airs January 27th at 8PM PST"
+        - day053: "Day 053: Airs January 28th at 8PM PST"
+        - day054: "Day 054: Airs January 29th at 8PM PST"
+        - day055: "Day 055: Airs January 30th at 9AM PST"
 ---
