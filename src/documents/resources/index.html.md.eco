@@ -1,6 +1,7 @@
 ---
 title: "Coding Resources"
 layout: "guide"
+id: "resources"
 ---
 
 This section is a compendium of links to articles and source code
@@ -12,7 +13,7 @@ related to Handmade Hero.
 <% for cat in categories: %>
 
 ### <%= cat.title %>
-
+<p></p>
 <ul>
 <% for item in cat.items: %>
 <li>
