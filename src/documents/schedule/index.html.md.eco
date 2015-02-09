@@ -1,0 +1,25 @@
+---
+title: "Handmade Hero Central"
+layout: "guide"
+---
+
+### Welcome to Handmade Hero Central!
+
+There are lots of resources here to help you follow along with
+Handmade Hero, talk with fellow developers, and find useful
+programming resources.  You can use the button bar at the top
+of the page to navigate.
+
+Below you will find the complete broadcast schedule for Handmade Hero.
+You can watch it live on Twitch, or after-the-fact on YouTube and
+the Episode Guide.
+
+<% {weeks} = @getFile({fullPath: $like: 'schedule.yaml'}).toJSON() %>
+<% for week in weeks: %>
+
+### Schedule for the Week of <%= week.name %>
+<% for day in week.days: %>
+  <%= day.date %>: <%= day.time %>
+<% end %>
+
+<% end %>

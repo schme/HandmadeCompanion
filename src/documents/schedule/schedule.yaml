@@ -1,0 +1,81 @@
+---
+weeks:
+  - name: "Week of February 9th"
+    days: [{date:"2015-02-09", time:"20:00"}, 
+           {date:"2015-02-10", time:"20:00"},
+           {date:"2015-02-11", time:"20:30"},
+           {date:"2015-02-12", time:"20:00"},
+           {date:"2015-02-13", time:"09:00"}]
+  - name: "Week of February 2nd"
+    days: [{date:"2015-02-02", time:"20:00"},
+           {date:"2015-02-03", time:"20:00"},
+           {date:"2015-02-04", time:"20:00"},
+           {date:"2015-02-05", time:"20:00"},
+           {date:"2015-02-06", time:"09:00"}]
+  - name: "Week of January 26th"
+    days: [{date:"2015-01-26", time:"20:00"},
+           {date:"2015-01-27", time:"20:00"},
+           {date:"2015-01-28", time:"20:00"},
+           {date:"2015-01-29", time:"20:00"},
+           {date:"2015-01-30", time:"09:00"}]
+  - name: "Week of January 19th"
+    days: [{date:"2015-01-19", time:"20:00"},
+           {date:"2015-01-20", time:"20:30"},
+           {date:"2015-01-21", time:"20:00"},
+           {date:"2015-01-22", time:"20:00"},
+           {date:"2015-01-23", time:"09:00"}]
+  - name: "Week of January 12th"
+    days: [{date:"2015-01-12", time:"20:00"},
+           {date:"2015-01-13", time:"20:00"},
+           {date:"2015-01-14", time:"20:00"},
+           {date:"2015-01-15", time:"20:00"},
+           {date:"2015-01-16", time:"09:00"}]
+  - name: "Week of January 5th"
+    days: [{date:"2015-01-05", time:"20:00"},
+           {date:"2015-01-06", time:"20:00"},
+           {date:"2015-01-07", time:"20:00"},
+           {date:"2015-01-08", time:"20:00"},
+           {date:"2015-01-09", time:"09:00"}]
+  - name: "Week of December 29th"
+    days: [{date:"2014-12-29", time:"20:00"},
+           {date:"2014-12-30", time:"20:00"},
+           {date:"2014-12-31", time:"10:00"},
+           {date:"2015-01-01", time:"20:00"},
+           {date:"2015-01-02", time:"10:00"}]
+  - name: "Week of December 22nd"
+    days: [{date:"2014-12-22", time:"20:00"},
+           {date:"2014-12-23", time:"08:00"},
+           {date:"2014-12-24", time:"10:00"},
+           {date:"2014-12-25", time:"10:00"},
+           {date:"2014-12-26", time:"10:00"}]
+  - name: "Week of December 15th"
+    days: [{date:"2014-12-15", time:"20:00"},
+           {date:"2014-12-16", time:"20:00"},
+           {date:"2014-12-17", time:"20:00"},
+           {date:"2014-12-18", time:"20:00"},
+           {date:"2014-12-19", time:"11:00"}]
+  - name: "Week of December 8th"
+    days: [{date:"2014-12-08", time:"20:00"},
+           {date:"2014-12-09", time:"20:00"},
+           {date:"2014-12-10", time:"20:00"},
+           {date:"2014-12-11", time:"20:00"},
+           {date:"2014-12-12", time:"11:00"}]
+  - name: "Week of December 1st"
+    days: [{date:"2014-12-01", time:"20:00"},
+           {date:"2014-12-02", time:"20:00"},
+           {date:"2014-12-03", time:"20:00"},
+           {date:"2014-12-04", time:"20:00"},
+           {date:"2014-12-05", time:"11:00"}]
+  - name: "Week of November 24th"
+    days: [{date:"2014-11-24", time:"20:00"},
+           {date:"2014-11-25", time:"20:00"},
+           {date:"2014-11-26", time:"11:00"},
+           {date:"2014-11-27", time:"11:00"},
+           {date:"2014-11-28", time:"11:00"}]
+  - name: "Week of November 17th"
+    days: [{date:"2014-11-17", time:"20:00"},
+           {date:"2014-11-18", time:"20:00"},
+           {date:"2014-11-19", time:"20:00"},
+           {date:"2014-11-20", time:"20:00"},
+           {date:"2014-11-21", time:"20:00"}]
+---
