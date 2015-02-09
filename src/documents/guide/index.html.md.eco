@@ -1,6 +1,7 @@
 ---
 title: "Episode Guide"
 layout: "guide"
+id: "guide"
 ---
 
 <% twit = (name) -> "[@#{name}](https://twitter.com/#{name})" %>
