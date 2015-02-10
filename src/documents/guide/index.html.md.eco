@@ -78,7 +78,7 @@ level of experience.
 <% end %>
 
 <% if cat.iker_url: %>
-<li><a href="/jace/iker/ <%= cat.iker_url %>">Iker's Weekly Illustration</a></li>
+<li><a href="/jace/iker/<%= cat.iker_url %>">Iker's Weekly Illustration</a></li>
 <% end %>
 
 </ul>
