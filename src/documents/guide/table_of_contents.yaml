@@ -23,6 +23,7 @@ categories:
         [day1, day2, day3, day4, day5]
 
   - title: "Week 1: Simple Framebuffer on Windows"
+    iker_url: "handmade_hero_week_001.png"
     description: >
         The first week of Handmade Hero was spent setting up a
         Windows build, creating a window, and making it so that
@@ -32,6 +33,7 @@ categories:
         [day001, day002, day003, day004, day005]
 
   - title: "Week 2: Sound and Input on Windows"
+    iker_url: "handmade_hero_week_002.png"
     description: >
         The second week of Handmade was spent getting sound,
         input, and timing working.
@@ -39,6 +41,7 @@ categories:
         [day006, day007, day008, day009, day010]
 
   - title: "Week 3: Defining the Platform Layer Boundary"
+    iker_url: "handmade_hero_week_003.png"
     description: >
         The third week of Handmade Hero had us abstracting our
         Win32 code so we could divide the project into
@@ -47,6 +50,7 @@ categories:
         [day011, day012, day013, day014, day015]
 
   - title: "Week 4: Win32 Prototyping Layer Cleanup"
+    iker_url: "handmade_hero_week_004.png"
     description: >
         The fourth week of Handmade Hero was spent cleaning up
         our Win32 code, and getting to a lot of the "TODO" markers
@@ -55,6 +59,7 @@ categories:
         [day016, day017, day018, day019, day020]
 
   - title: "Week 5: Fun with Win32"
+    iker_url: "handmade_hero_week_005.png"
     description: >
         The fifth week of Handmade Hero is all about taking some
         time to do crazy, fun, and useful stuff with our Win32
@@ -63,6 +68,7 @@ categories:
         [day021, day022, day023, day024, day025]
 
   - title: "Week 6: Game Engine Architecture"
+    iker_url: "handmade_hero_week_006.png"
     folder: "game-architecture"
     description: >
         The sixth week of Handmade Hero spends time laying the
@@ -72,6 +78,7 @@ categories:
         [day026, day027, day028, day029, day030]
 
   - title: "Week 7: Coordinates and Tilemaps"
+    iker_url: "handmade_hero_week_007.png"
     description: >
         The seventh week of Handmade Hero is about figuring
         out how we want to store the game world, as well as
@@ -80,6 +87,7 @@ categories:
         [day031, day032, day033, day034, day035]
 
   - title: "Week 8: Bitmaps"
+    iker_url: "handmade_hero_week_008.png"
     description: >
         The eighth week of Handmade Hero focuses on loading
         and displaying our first asset files.
@@ -87,6 +95,7 @@ categories:
         [day036, day037, day038, day039, day040]
 
   - title: "Week 9: Vector Math and Player Movement"
+    iker_url: "handmade_hero_week_009.png"
     description: >
         The ninth week of Handmade Hero introduces vectors and
         begins the process of using them to improve character motion.
@@ -94,6 +103,7 @@ categories:
         [day041, day042, day043, day044, day045]
 
   - title: "Week 10: Player Collision"
+    iker_url: "handmade_hero_week_010.png"
     description: >
         The tenth week of Handmade Hero concentrates on iteratively
         improving the nascent collision detection code.
@@ -101,6 +111,7 @@ categories:
         [day046, day047, day048, day049, day050]
 
   - title: "Week 11" 
+    iker_url: "handmade_hero_week_011.png"
     description: >
         The eleventh week of Handmade Hero is in progress.
     days:
