@@ -14,14 +14,14 @@
     <header>
         <nav>
             <ul>
-                <li>
+                <li <%= "id='activenav'" if (@document.button_id=="schedule") %> >
                     <a href="/">Handmade Hero Central</a>
                 </li>
-                <li id="activenav">
+                <li <%= "id='activenav'" if (@document.button_id=="guide") %> >
                     <a href="<%= @site.guide_url %>">Episode Guide</a>
                 </li>
-                <li>
-                    <a href="/index.php?option=com_content&amp;view=article&amp;id=8">Coding Resources</a>
+                <li <%= "id='activenav'" if (@document.button_id=="resources") %> >
+                    <a href="<%= @site.resources_url %>">Coding Resources</a>
                 </li>
                 <li>
                     <a href="/index.php?option=com_kunena&amp;view=category&amp;catid=4">Code Discussion</a>
@@ -29,8 +29,8 @@
                 <li>
                     <a href="/index.php?option=com_kunena&amp;view=category&amp;catid=5">Game Discussion</a>
                 </li>
-                <li>
-                    <a href="/index.php?option=com_content&amp;view=article&amp;id=14">Thanks!</a>
+                <li <%= "id='activenav'" if (@document.button_id=="thanks") %> >
+                    <a href="<%= @site.thanks_url %>">Thanks!</a>
                 </li>
             </ul>
         </nav>

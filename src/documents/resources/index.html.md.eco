@@ -1,0 +1,35 @@
+---
+title: "Coding Resources"
+layout: "guide"
+button_id: "resources"
+---
+
+This section is a compendium of links to articles and source code
+designed to help you follow Handmade Hero on other operating systems
+or using other editing environments, and for general coding resources
+related to Handmade Hero.
+
+<% {categories} = @getFile({fullPath: $like: 'resources.yaml'}).toJSON() %>
+<% for cat in categories: %>
+
+### <%= cat.title %>
+<p></p>
+<ul>
+<% for item in cat.items: %>
+<li>
+
+<a href="<%= item.doc_link %>"><%= item.doc_name %></a>
+<% if item.author_name: %>
+  <%= " by " %>
+  <% if item.author_link: %>
+    <a href="<%= item.author_link %>"><%= item.author_name %></a>
+  <% else: %>
+    <%= item.author_name %>
+  <% end %>
+<% end %>
+
+</li>
+<% end %>
+</ul>
+
+<% end %>
